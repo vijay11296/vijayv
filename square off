@@ -1,17 +1,16 @@
-/* C Program to Calculate Square of a Number */
- 
-#include<stdio.h>
- 
-int main()
+
+#include <stdio.h>
+
+void main()
 {
-  int number, Square;
- 
-  printf(" \n Please Enter any integer Value : ");
-  scanf("%d", &number);
-  
-  Square = number * number;
-  
-  printf("\n Square of a given number %d is  =  %d", number, Square);
- 
-  return 0;
+   int i,n,sum=0;
+   printf("Input the number of terms : ");
+   scanf("%d",&n);
+   printf("\nThe square natural upto %d terms are :",n);
+   for(i=1;i<=n;i++)
+   {
+     printf("%d  ",i*i);
+     sum+=i*i;
+   }
+   printf("\nThe Sum of Square Natural Number upto %d terms = %d \n",n,sum);
 }
